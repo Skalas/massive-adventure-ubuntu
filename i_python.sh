@@ -11,5 +11,4 @@ sudo pip install pyzmq
 sudo pip install tornado
 sudo pip install pygments
 sudo pip install nose
-sudo easy_install psycopg2
-sudo easy_install pymongo
+
