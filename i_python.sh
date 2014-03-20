@@ -12,3 +12,4 @@ sudo pip install tornado
 sudo pip install pygments
 sudo pip install nose
 
+yes | sudo apt-get install ipython-notebook
