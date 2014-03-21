@@ -1,4 +1,4 @@
-yes|sudo apt-get install build-essential libpq-dev liblapack3 libblas3 libmysql++-dev sqlite3 fort77 xorg-dev texinfo liblapack-dev liblapack3gf makeinfo
+yes|sudo apt-get install build-essential libpq-dev liblapack3 libblas3 libmysql++-dev sqlite3 fort77 xorg-dev texinfo liblapack-dev liblapack3gf
 cd
 wget -c http://cran.r-project.org/src/base/R-latest.tar.gz
 sudo mv /usr/lib/libf2c.so /usr/lib/libf2c.so_backup
