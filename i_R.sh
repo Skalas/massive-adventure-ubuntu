@@ -5,4 +5,4 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 sudo chmod ugo+rw /etc/apt/sources.list
 echo 'deb http://cran.r-project.org/bin/linux/ubuntu saucy/' >> '/etc/apt/sources.list'
 apt-get update
-yes | sudo apt-get install r-base r-base-dev
+echo 'y' | sudo apt-get install r-base r-base-dev
