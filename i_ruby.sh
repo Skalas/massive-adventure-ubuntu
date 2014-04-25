@@ -15,6 +15,6 @@ echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 source ~/.bashrc
 
-curl -fsSL https://gist.github.com/mislav/a18b9d7f0dc5b9efc162.txt | rbenv install --patch 2.0
-rbenv global 2.0
+curl -fsSL https://gist.github.com/mislav/a18b9d7f0dc5b9efc162.txt | rbenv install --patch 2.0.0-p451
+rbenv global 2.0.0-p451
 ruby -v
