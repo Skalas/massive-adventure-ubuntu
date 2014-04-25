@@ -6,3 +6,4 @@ sudo locale-gen es_MX.UTF-8
 ./i_mongo.sh
 ./i_postgres.sh
 ./i_octave_compiled.sh
+./i_emacs24.sh
