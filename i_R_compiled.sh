@@ -4,8 +4,8 @@ echo 'y' | sudo apt-get install build-essential libpq-dev liblapack3 libblas3 li
 echo 'y' | sudo apt-get build-dep r-base
 cd
 wget -c http://cran.r-project.org/src/base/R-latest.tar.gz
-sudo mv /usr/lib/libf2c.so /usr/lib/libf2c.so_backup
-sudo ln -s /usr/lib/libf2c.a /usr/lib/libf2c.so
+#sudo mv /usr/lib/libf2c.so /usr/lib/libf2c.so_backup
+#sudo ln -s /usr/lib/libf2c.a /usr/lib/libf2c.so
 
 tar zxvf R-latest.tar.gz
 cd "$(ls -dt R-*/ | head -1 )"
