@@ -9,5 +9,5 @@ cd octave-3.8.1
 make
 make check
 sudo make install 
-sudo ln -s /opt/octave3.8/bin/octave /usr/local/bin/octave3.8
+sudo ln -s /opt/octave3.8/bin/octave /usr/local/bin/octave
 
