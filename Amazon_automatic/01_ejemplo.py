@@ -69,7 +69,7 @@ def launch_instance(ami='ami-c6402cf6',
 	# or you can use the default credentials in your ~/.boto config file # as we are doing here.
 	# hotmail	
 	#gmail
-	ec2 =boto.ec2.connect_to_region("us-west-2", aws_access_key_id='AKIAIHV2MQMBNJBQGMEA', aws_secret_access_key='nO+Ku3ZDzH1CQr0Vynti5436nF+mLd28Dns4i47s')
+	ec2 =boto.ec2.connect_to_region("us-west-2", aws_access_key_id='', aws_secret_access_key='')
         
 	# Check to see if specified keypair already exists.
 	# If we get an InvalidKeyPair.NotFound error back from EC2,
