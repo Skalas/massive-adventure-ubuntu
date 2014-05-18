@@ -28,27 +28,6 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Ubuntu Mono" :foundry "unknown" :slant normal :weight normal :height 90 :width normal)))))
 
-(add-to-list 'load-path "~/emacs_extensions/ESS/lisp/")
-(require 'ess-site)
-
-;; ESS mode configuration (only if ess is in a nonstandard place)
-(autoload 'R-mode "ess-site.el" "ESS" t)
-(add-to-list 'auto-mode-alist '("\\.R$" . R-mode))
-;;R stuff
-(setq ess-ask-for-ess-directory nil)
-(require 'ess-eldoc)
-;;compile the first target in the Makefile in the current directory using F9
-;;show matching parentheses
-
-
-(add-to-list 'load-path "~/.emacs.d")   
-(require 'auto-complete-config)
-(ac-config-default)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict")
-(global-auto-complete-mode t)
-; case sensitivity is important when finding matches
-(setq ac-ignore-case nil)
-
 (require 'ido)
 (ido-mode t)
 
