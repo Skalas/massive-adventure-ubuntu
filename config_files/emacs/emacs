@@ -1,0 +1,5 @@
+(add-to-list 'load-path "~/.emacs.d/personal/")
+(load-library "personal")
+(load-library "org_mode")
+(load-library "python_personal")
+(load-library "ruby_personal")
