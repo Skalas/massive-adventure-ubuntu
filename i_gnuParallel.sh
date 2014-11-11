@@ -6,3 +6,5 @@ cd "$(ls -dt parallel-*/ | head -1 )"
 ./configure
 make
 sudo make install
+cd
+rm `ls parallel-latest.*`
