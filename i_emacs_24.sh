@@ -9,4 +9,4 @@ cd "$(ls -dt emacs*/ | head -1 )"
 make
 sudo make install 
 cd 
-rm `emacs-24.4.*`
+rm `ls emacs-24.4.*`
