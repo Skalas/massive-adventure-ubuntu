@@ -8,6 +8,7 @@ sudo locale-gen es_MX.UTF-8
 sudo apt-get -y install curl git libcurl4-openssl-dev
 cd /home/vagrant/
 git clone https://github.com/Skalas/massive-adventure-ubuntu.git
+./massive-adventure-ubuntu/i_postgres.sh
 SCRIPT
 
 
@@ -16,7 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "ubuntu_14.10"
+  config.vm.box = "utopic64"
   config.vm.provision "shell", inline: $script
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
