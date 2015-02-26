@@ -8,7 +8,7 @@ sudo locale-gen es_MX.UTF-8
 sudo apt-get -y install curl git libcurl4-openssl-dev
 cd /home/vagrant/
 git clone https://github.com/Skalas/massive-adventure-ubuntu.git
-./massive-adventure-ubuntu/i_postgres.sh
+
 SCRIPT
 
 

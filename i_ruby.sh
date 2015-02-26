@@ -18,3 +18,5 @@ source ~/.bashrc
 rbenv install 2.1.2
 rbenv global 2.1.2
 ruby -v
+## falta generar un archivo simbólico.
+sudo ln -s "/home/$USER/.rbenv/shims/ruby /usr/bin/ruby"
