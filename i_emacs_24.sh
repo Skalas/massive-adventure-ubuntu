@@ -4,7 +4,7 @@ sudo apt-get -y upgrade
 cd 
 wget http://open-source-box.org/emacs/emacs-24.4.tar.xz
 tar -xvf emacs-24.4.tar.xz
-cd "$(ls -dt emacs*/ | head -1 )"
+cd emacs-24.4
 ./configure
 make
 sudo make install 
