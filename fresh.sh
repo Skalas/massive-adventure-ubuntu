@@ -1,1 +1,1 @@
-sudo apt-get install git curl libcurl4-openssl-dev
+sudo apt-get install git curl libcurl4-openssl-dev build-essential
