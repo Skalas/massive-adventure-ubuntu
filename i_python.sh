@@ -3,3 +3,4 @@ sudo pip install --upgrade pip
 sudo pip install --upgrade virtualenv
 sudo pip install numpy
 sudo pip install pandas
+sudo pip install awscli
