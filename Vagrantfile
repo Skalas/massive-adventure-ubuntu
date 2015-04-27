@@ -5,9 +5,7 @@
 VAGRANTFILE_API_VERSION = "2"
 $script = <<SCRIPT
 sudo locale-gen es_MX.UTF-8
-sudo apt-get -y install curl git libcurl4-openssl-dev
-cd /home/vagrant/
-git clone https://github.com/Skalas/massive-adventure-ubuntu.git
+sudo apt-get -y install curl git libcurl4-openssl-dev build-essential 
 
 SCRIPT
 
@@ -17,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "utopic64"
+  config.vm.box = "trusty64"
   config.vm.provision "shell", inline: $script
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -45,7 +43,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  config.vm.synced_folder ".", "/vagrant_data"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
