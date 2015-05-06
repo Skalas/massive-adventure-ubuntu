@@ -9,10 +9,10 @@ while true; do
 	    git checkout release-0.3;
 	    make ;
 	    break;;
-        [Nn]* ) sudo add-apt-repository ppa:staticfloat/juliareleases;
-	    sudo add-apt-repository ppa:staticfloat/julia-deps;
+        [Nn]* ) sudo add-apt-repository -y ppa:staticfloat/juliareleases;
+	    sudo add-apt-repository -y ppa:staticfloat/julia-deps;
 	    sudo apt-get update;
-	    sudo apt-get install julia ;
+	    sudo apt-get install -y julia ;
 	    exit;;
         * ) echo "Please answer yes or no.";;
     esac
