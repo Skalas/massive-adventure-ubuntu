@@ -15,8 +15,6 @@ echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 source ~/.bashrc
 
-rbenv install 2.1.2
-rbenv global 2.1.2
+rbenv install 2.2.2
+rbenv global 2.2.2
 ruby -v
-## falta generar un archivo simbólico.
-sudo ln -s "/home/$USER/.rbenv/shims/ruby /usr/bin/ruby"
