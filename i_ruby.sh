@@ -18,3 +18,6 @@ source ~/.bashrc
 rbenv install 2.2.2
 rbenv global 2.2.2
 ruby -v
+
+echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+
