@@ -5,8 +5,12 @@ sudo apt-get update
 sudo apt-get install -y ultra-flat-icons
 sudo apt-get install -y royal-gtk-theme
 ## Usar sourcecodePro como font
-[ -d /usr/share/fonts/opentype ] || sudo mkdir /usr/share/fonts/opentype
-sudo git clone https://github.com/adobe-fonts/source-code-pro.git /usr/share/fonts/opentype/scp
-sudo fc-cache -f -v
+mkdir /tmp/adodefont
+cd /tmp/adodefont
+wget https://github.com/adobe-fonts/source-code-pro/archive/1.017R.zip
+unzip 1.017R.zip
+sudo mkdir -p /usr/local/share/fonts/
+sudo cp source-code-pro-1.017R/OTF/*.otf /usr/local/share/fonts/
+fc-cache -f -v
 ## Uso base16 ocean dark.
 source ./base16-gnome-terminal/base16-ocean.dark.sh
