@@ -9,3 +9,5 @@ echo "deb https://apt.dockerproject.org/repo ubuntu-$ubuntu_codename main" > /et
 apt-get update
 apt-get install -y docker-engine
 EOF
+sudo gpasswd -a ${USER} docker
+sudo service docker restart
