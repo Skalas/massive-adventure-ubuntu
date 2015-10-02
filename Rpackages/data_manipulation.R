@@ -3,7 +3,7 @@ pacman::p_load(RODBC, RMySQL, RPostgresSQL, RSQLite, foreign)
 pacman::p_install_gh("hadley/readxl")
 
 # data manipulation
-pacman::p_load(plyr, dplyr, data.table, tidyr, stringr, lubridate)
+pacman::p_load(plyr, dplyr, data.table, tidyr, stringr, lubridate, gsubfn)
 
 # data visualization
 pacman::p_load(ggplot2, graphics, ggvis) 
