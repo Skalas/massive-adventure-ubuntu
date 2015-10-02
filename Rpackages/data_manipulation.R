@@ -1,5 +1,5 @@
 # data load
-pacman::p_load(RODBC, RMySQL, RPostgresSQL, RSQLite, foreign)
+pacman::p_load(RODBC, RMySQL, RPostgreSQL, RSQLite, foreign)
 pacman::p_install_gh("hadley/readxl")
 
 # data manipulation
@@ -32,5 +32,5 @@ pacman::p_load(Rcpp, parallel)
 pacman::p_load(XML, jsonlite, httr)
 
 # Write R packages
-pacman::p_load(devtools, testthat, roygen2)
+pacman::p_load(devtools, testthat, roxygen2)
 
