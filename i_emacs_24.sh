@@ -18,4 +18,5 @@ while true; do
         [Nn]* ) sudo apt-get install -y emacs24; exit;;
         * ) echo "Please answer yes or no.";;
     esac
+    sudo sed -i -e 's/Icon=\/usr\/share\/icons\/hicolor\/scalable\/apps\/emacs24\.svg/Icon\=emacs/g'  /usr/share/applications/emacs24.desktop
 done
