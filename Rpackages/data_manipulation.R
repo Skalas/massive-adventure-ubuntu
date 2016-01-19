@@ -1,12 +1,15 @@
 # data load
-pacman::p_load(RODBC, RMySQL, RPostgreSQL, RSQLite, foreign)
+pacman::p_load(RODBC, RMySQL, RPostgreSQL, RSQLite, foreign, Rpostgres)
 pacman::p_install_gh("hadley/readxl")
-
 # data manipulation
 pacman::p_load(plyr, dplyr, data.table, tidyr, stringr, lubridate, gsubfn, readr)
 
 # data visualization
-pacman::p_load(ggplot2, graphics, ggvis) 
+pacman::p_load(ggplot2, graphics, ggvis)
+pacman::p_install_gh("RcppCore/Rcpp")
+pacman::p_install_gh("rstats-db/DBI")
+pacman::p_install_gh("rstats-db/RPostgres")
+
 pacman::p_install_gh('ramnathv/htmlwidgets')
 pacman::p_install_gh('rstudio/leaflet')
 pacman::p_install_gh('bwlewis/rthreejs')
