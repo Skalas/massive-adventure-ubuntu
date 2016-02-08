@@ -1,6 +1,6 @@
 #!/bin/bash
 ## Install cinnamon ppa
-sudo add-apt-repository -yppa:lestcape/cinnamon
+sudo add-apt-repository -y ppa:lestcape/cinnamon
 ## install docky ppa
 sudo add-apt-repository -y ppa:ricotz/docky
 ## update and install 
