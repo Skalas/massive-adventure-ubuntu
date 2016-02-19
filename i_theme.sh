@@ -13,4 +13,4 @@ mkdir -p ~/.fonts
 cp source-code-pro-1.017R/OTF/*.otf ~/.fonts
 fc-cache -f -v
 ## Uso base16 ocean dark.
-source ./base16-gnome-terminal/base16-ocean.dark.sh
+./base16-gnome-terminal/base16-ocean.dark.sh
