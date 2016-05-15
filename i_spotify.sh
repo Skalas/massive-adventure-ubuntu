@@ -4,4 +4,4 @@ sudo apt-get update
 sudo apt-get install -y spotify-client
 cd /tmp/
 wget http://ftp.acc.umu.se/mirror/cdimage/snapshot/Debian/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-5_amd64.deb
-dpkg -i libgcrypt11_1.5.3-5_amd64.deb
+sudo dpkg -i libgcrypt11_1.5.3-5_amd64.deb
