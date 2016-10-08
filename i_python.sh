@@ -5,6 +5,7 @@ sudo pip install --upgrade virtualenv
 # Numpy  and pandas.
 sudo pip install numpy
 sudo pip install pandas
+sudo pip install matplotlib
 # AWS command line interface.
 sudo pip install awscli
 # Either of these
