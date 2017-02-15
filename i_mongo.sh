@@ -16,5 +16,5 @@ ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
 WantedBy=multi-user.target
 " | sudo tee /lib/systemd/system/mongod.service
 sudo systemctl daemon-reload
-systemctl start mongod
-systemctl enable mongod
+sudo systemctl start mongod
+sudo systemctl enable mongod
