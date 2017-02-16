@@ -15,7 +15,6 @@ while true; do
 	    ./configure --enable-memory-profiling --enable-R-shlib --with-blas --with-lapack --with-tcltk  --with-cairo --with-libpng --with-jpeglib --with-libtiff;
 	    make;
 	    sudo make install;
-	    
 	    break;;
         [Nn]* ) sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9;
 	    ubuntu_codename=`lsb_release -cs` ;
