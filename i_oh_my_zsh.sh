@@ -1,3 +1,7 @@
-echo 'y' | sudo apt-get install zsh
-curl -L http://install.ohmyz.sh | sh
+#!/bin/bash
+sudo apt install -y zsh
+curl -L git.io/antigen > ~/antigen.zsh
+cp config_files/zshrc ~/.zshrc
+cat config_files/env_vars >> ~/.env_vars
+cp config_files/aliases ~/aliases
 chsh -s /bin/zsh

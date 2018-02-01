@@ -1,0 +1,27 @@
+# SSH
+# Para evitar el error "Error opening terminal:rxvt-unicode"
+# que sucede al conectarse via ssh
+
+# Git clone from GitHub
+function gch() {
+  git clone git://github.com/skalas/$1.git
+}
+
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+
+
+# Quickly clobber a file and checkout
+function grf() { 
+  rm $1
+  git checkout $1 
+}
+
+# General
+alias h='history'
+alias md='mkdir -p'
+
+
+# Crear directorio y un archivo
+mkpfile() { mkdir -p "$(dirname "$1")" || return; touch "$1"; }
+
+SHELL=/bin/zsh
