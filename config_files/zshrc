@@ -5,7 +5,6 @@ source ~/.env_vars
 # Alias
 source ~/aliases
 
-
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
@@ -14,8 +13,6 @@ antigen bundle git
 antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
-
-
 antigen bundle docker
 antigen bundle dirhistory
 antigen bundle git-extras
@@ -23,11 +20,9 @@ antigen bundle tmux
 antigen bundle httpie
 antigen bundle jsontools
 antigen bundle pep8
-antigen bundle pyenv
 antigen bundle python
 antigen bundle web-search
 antigen bundle aws
-antigen bundle b4b4r07/emoji-cli
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-autosuggestions
