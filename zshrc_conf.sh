@@ -1,4 +1,0 @@
-
-fortune
-cat ~/.message
-
