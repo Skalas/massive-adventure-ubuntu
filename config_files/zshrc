@@ -1,9 +1,9 @@
 fortune -s
-source ~/antigen.zsh
+source ~/src/antigen.zsh
 source ~/.env_vars
 
 # Alias
-source ~/aliases
+source ~/src/aliases
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
