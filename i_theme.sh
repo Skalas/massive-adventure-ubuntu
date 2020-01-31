@@ -1,7 +1,4 @@
 #!/bin/bash
-sudo add-apt-repository -y ppa:noobslab/themes
-sudo add-apt-repository -y ppa:noobslab/icons
-sudo apt-get update && sudo apt-get install -y ultra-flat-icons plane-theme
 
 ##Usar sourcecodePro como font
 mkdir /tmp/adodefont
