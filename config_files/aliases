@@ -24,4 +24,7 @@ alias md='mkdir -p'
 # Crear directorio y un archivo
 mkpfile() { mkdir -p "$(dirname "$1")" || return; touch "$1"; }
 
+alias install="sudo apt install"
+alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+alias tmaws="aws --profile tm-data-sciences-Ops-Techops"
 SHELL=/bin/zsh
