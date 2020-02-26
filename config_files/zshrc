@@ -1,7 +1,7 @@
 fortune -s
 source ~/src/antigen.zsh
 source ~/.env_vars
-
+source ~/src/load_anaconda.zsh
 # Alias
 source ~/src/aliases
 
@@ -21,8 +21,8 @@ antigen bundle httpie
 antigen bundle jsontools
 antigen bundle pep8
 antigen bundle python
-antigen bundle web-search
 antigen bundle aws
+antigen bundle esc/conda-zsh-completion
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-autosuggestions
@@ -49,3 +49,4 @@ antigen theme juanghurtado
 
 # Tell Antigen that you're done.
 antigen apply
+
