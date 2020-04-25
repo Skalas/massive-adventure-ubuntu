@@ -5,7 +5,7 @@ while true; do
         [Yy]* ) sudo apt-get update;
 	    sudo apt-get upgrade -y;
 	    sudo apt-get install -y build-essential libpq-dev liblapack3 libblas3 libmysql++-dev sqlite3 fort77 gnuplot-x11  texinfo liblapack-dev texi2html libglpk-dev libgeos-dev libgdal1-dev libproj-dev;
-	    sudo apt install -y gfortran  autoconf automake bzip2-doc cdbs debhelper dh-strip-nondeterminism dh-translations gettext intltool intltool-debian libarchive-zip-perl libasprintf-dev libbz2-dev libfile-stripnondeterminism-perl libgettextpo-dev libgettextpo0 liblzma-dev libmail-sendmail-perl libncurses5-dev libpcre3-dev libpcre32-3 libpcrecpp0v5 libreadline-dev libreadline6-dev libsys-hostname-long-perl libtinfo-dev m4 po-debconf python-scour xorg-dev libcairo2-dev libgtk2.0-dev;
+	    sudo apt install -y gfortran  autoconf automake bzip2-doc cdbs debhelper dh-strip-nondeterminism dh-translations gettext intltool intltool-debian libarchive-zip-perl libasprintf-dev libbz2-dev libfile-stripnondeterminism-perl libgettextpo-dev libgettextpo0 liblzma-dev libmail-sendmail-perl libncurses5-dev libpcre3-dev libpcre32-3 libpcrecpp0v5 libreadline-dev libreadline6-dev libsys-hostname-long-perl libtinfo-dev m4 po-debconf xorg-dev libcairo2-dev libgtk2.0-dev;
 	    sudo apt-get -y build-dep r-base;
 	    mkdir -p $HOME/src;
 	    cd $HOME/src;
