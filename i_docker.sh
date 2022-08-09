@@ -2,22 +2,20 @@
 ## We check that we can manage this
 sudo bash <<EOF
 ## Prerequisites
+apt update
 apt install -y \
     apt-transport-https \
     ca-certificates \
     curl \
-    gnupg-agent \
     software-properties-common
-
 ## We get the public keys
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-## We add the repository to the sources
-add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   focal \
-   stable"
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
+sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" |\
+ sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 apt update
-apt install -y docker-ce docker-ce-cli containerd.io
+apt-cache policy docker-ce
+apt install -y docker-ce
 EOF
 sudo gpasswd -a ${USER} docker
 sudo service docker restart
