@@ -8,3 +8,4 @@ sudo snap install slack --classic
 sudo snap install snap-store
 sudo snap install aws-cli --classic
 sudo snap install simplenote
+sudo snap install discord
